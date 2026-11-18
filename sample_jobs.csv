@@ -1,0 +1,9 @@
+id,title,company,location,description
+1,Backend Engineer Intern,Acme Pay,Bengaluru,Build Python REST APIs with FastAPI and PostgreSQL for a payments platform. Write unit tests and debug from logs.
+2,Android Developer Intern,PixelNest,Remote,Build Kotlin and Jetpack Compose screens for a consumer app. Work with REST APIs and Firebase.
+3,Data Analyst Intern,RetailIQ,Gurugram,Analyse sales data with SQL and Python. Build dashboards and present insights to the business team.
+4,ML Engineer Intern,VisionLabs,Bengaluru,Train and evaluate computer vision models in TensorFlow. Improve accuracy and write evaluation reports.
+5,Frontend Intern,Craftly,Remote,Build React and TypeScript components for an admin console. Work with designers on responsive layouts.
+6,Customer Support Engineer,CloudDesk,Bengaluru,Troubleshoot customer issues using logs and SQL. Work with Linux servers and write clear incident notes.
+7,NLP Research Intern,LinguaAI,Remote,Work on text classification and chatbot models. Evaluate model output quality and run experiments.
+8,Full Stack Intern,ShipFast,Bengaluru,Build Node.js APIs and React front ends. Write integration tests and use Git workflows with code reviews.
