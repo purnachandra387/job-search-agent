@@ -1,4 +1,4 @@
-"""Tool-using LLM job search agent with conversation memory and Pydantic structured output.
+﻿"""Tool-using LLM job search agent with conversation memory and Pydantic structured output.
 
 Supports Google Gemini (GEMINI_API_KEY) or Groq (GROQ_API_KEY) over httpx.
 
@@ -209,7 +209,7 @@ def call_llm(messages: list[dict[str, Any]]) -> dict[str, Any]:
     elif gemini_key:
         url = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
         api_key = gemini_key
-        model = os.getenv("LLM_MODEL", "gemini-2.5-flash")
+        model = os.getenv("LLM_MODEL", "gemini-3.5-flash-lite")
     else:
         raise AgentConfigError("Set either GEMINI_API_KEY or GROQ_API_KEY in your environment.")
     payload = {
