@@ -95,3 +95,9 @@ def get_job_details(job_id: int) -> dict:
 @app.post("/agent", response_model=agent.AgentResponse)
 def chat_with_agent(req: AgentRequest) -> agent.AgentResponse:
     return agent.run_agent(req.message, session_id=req.session_id)
+
+from fastapi.responses import RedirectResponse
+@app.get('/', include_in_schema=False)
+def root():
+    return RedirectResponse(url='/docs')
+
