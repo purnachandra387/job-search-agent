@@ -1,6 +1,7 @@
-﻿.venv/
+.venv/
 __pycache__/
 .pytest_cache/
 jobs.db
 index.npz
 .env
+.fastembed_cache/

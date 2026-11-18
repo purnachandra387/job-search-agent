@@ -4,3 +4,4 @@ pydantic
 pytest
 numpy
 fastembed
+httpx

@@ -3,16 +3,17 @@
 Usage: python load_jobs.py sample_jobs.csv
 CSV columns: id, title, company, location, description
 """
+
 import csv
+import os
 import sqlite3
 import sys
 
-DB_PATH = "jobs.db"
+DB_PATH = os.getenv("JOBS_DB_PATH", "jobs.db")
 
 
 def init_db(conn: sqlite3.Connection) -> None:
-    conn.execute(
-        """
+    conn.execute("""
         CREATE TABLE IF NOT EXISTS jobs (
             id INTEGER PRIMARY KEY,
             title TEXT NOT NULL,
@@ -20,8 +21,7 @@ def init_db(conn: sqlite3.Connection) -> None:
             location TEXT,
             description TEXT NOT NULL
         )
-        """
-    )
+        """)
 
 
 def load_csv(path: str) -> int:
